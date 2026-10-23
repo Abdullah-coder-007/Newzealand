@@ -48,18 +48,41 @@ const L = {
   asset: (b, p) => b + "assets/" + p,
 };
 
-/* ---------- brand mark (soft koru) ---------- */
-const MARK = (cls = "mark") => `
-<svg class="${cls}" viewBox="0 0 40 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <rect width="40" height="40" rx="11" fill="#2E6E57"/>
-  <path d="M27.5 12.5c-7 0-12 4.2-12 11 0 3.6 2.4 6 5.4 6 2.7 0 4.6-1.9 4.6-4.4 0-2-1.3-3.4-3-3.4-1.3 0-2.2.8-2.2 1.9 0 .6.3 1 .3 1" stroke="#EAF3EE" stroke-width="2.3" stroke-linecap="round"/>
-  <circle cx="20.2" cy="23.6" r="1.4" fill="#C8A64B"/>
-</svg>`;
+/* ---------- brand mark (New Zealand flag) ----------
+   Rounded tile showing the NZ flag: royal-blue field, Union Jack canton,
+   and the four red, white-edged stars of the Southern Cross. */
+const nzFlagSVG = (idSuffix) => {
+  const rc = "rc" + idSuffix, cc = "cc" + idSuffix, st = "st" + idSuffix;
+  const star = (x, y, s) =>
+    `<use href="#${st}" transform="translate(${x} ${y}) scale(${s})" fill="#CC142B" stroke="#fff" stroke-width="0.9" stroke-linejoin="round"/>`;
+  return `
+  <defs>
+    <clipPath id="${rc}"><rect width="40" height="40" rx="11"/></clipPath>
+    <clipPath id="${cc}"><rect width="20" height="20"/></clipPath>
+    <polygon id="${st}" points="0,-3 -0.7,-0.97 -2.85,-0.93 -1.14,0.37 -1.76,2.43 0,1.2 1.76,2.43 1.14,0.37 2.85,-0.93 0.7,-0.97"/>
+  </defs>
+  <g clip-path="url(#${rc})">
+    <rect width="40" height="40" fill="#00247D"/>
+    <g clip-path="url(#${cc})">
+      <path d="M0 0 L20 20 M20 0 L0 20" stroke="#fff" stroke-width="4"/>
+      <path d="M0 0 L20 20 M20 0 L0 20" stroke="#CC142B" stroke-width="1.4"/>
+      <path d="M10 0 V20 M0 10 H20" stroke="#fff" stroke-width="5"/>
+      <path d="M10 0 V20 M0 10 H20" stroke="#CC142B" stroke-width="2.8"/>
+    </g>
+    ${star(30, 11, 0.72)}
+    ${star(24.5, 21, 0.72)}
+    ${star(34, 20.5, 0.6)}
+    ${star(29.5, 31.5, 0.95)}
+  </g>`;
+};
+
+const MARK = (cls = "mark") =>
+  `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">${nzFlagSVG("m")}</svg>`;
 
 const FAVICON =
   "data:image/svg+xml," +
   encodeURIComponent(
-    `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='11' fill='#2E6E57'/><path d='M27.5 12.5c-7 0-12 4.2-12 11 0 3.6 2.4 6 5.4 6 2.7 0 4.6-1.9 4.6-4.4 0-2-1.3-3.4-3-3.4-1.3 0-2.2.8-2.2 1.9 0 .6.3 1 .3 1' stroke='#EAF3EE' stroke-width='2.3' stroke-linecap='round' fill='none'/><circle cx='20.2' cy='23.6' r='1.4' fill='#C8A64B'/></svg>`
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">${nzFlagSVG("f")}</svg>`
   );
 
 const chevron = `<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -500,7 +523,9 @@ function run() {
 
   // GitHub Pages support files
   fs.writeFileSync(path.join(ROOT, ".nojekyll"), "");
-  fs.writeFileSync(path.join(ROOT, "CNAME"), site.domain + "\n");
+  // No CNAME yet — served from the github.io URL until the domain transfer completes.
+  // When ready, uncomment the next line, rebuild, and set up DNS:
+  // fs.writeFileSync(path.join(ROOT, "CNAME"), site.domain + "\n");
 
   console.log(`Built ${written.length} pages:`);
   console.log(
