@@ -202,10 +202,17 @@ ${footer(b)}
 }
 
 /* ---------- components ---------- */
+function storyImage(b, a, { hero = false, caption = false } = {}) {
+  if (!a.image) return "";
+  const img = `<img class="story-image" src="${L.asset(b, a.image.src)}" alt="${esc(a.image.alt)}" width="1200" height="630" loading="${hero ? "eager" : "lazy"}" decoding="async"${hero ? ' fetchpriority="high"' : ""}>`;
+  return caption ? `<figure class="article-image">${img}<figcaption>${esc(a.image.credit)}</figcaption></figure>` : img;
+}
+
 function articleCard(b, a, { soft = false } = {}) {
   return `
 <a class="card-link" href="${L.art(b, a.slug)}">
   <article class="card${soft ? " soft" : ""}">
+    ${storyImage(b, a)}
     <span class="tag">${esc(catName(a.category))}</span>
     <h3>${esc(a.title)}</h3>
     <p>${esc(a.dek)}</p>
@@ -249,6 +256,7 @@ function buildHome() {
     <div class="hero-grid">
       <a class="card-link" href="${L.art(b, heroMain.slug)}">
         <div class="hero-lead">
+          ${storyImage(b, heroMain, { hero: true })}
           <span class="tag">${esc(catName(heroMain.category))}</span>
           <h1>${esc(heroMain.title)}</h1>
           <p class="dek">${esc(heroMain.dek)}</p>
@@ -258,7 +266,7 @@ function buildHome() {
       <div class="hero-side">
         ${heroMinis
           .map(
-            (a) => `<a class="card-link" href="${L.art(b, a.slug)}"><div class="hero-mini"><span class="tag accent">${esc(catName(a.category))}</span><h3>${esc(a.title)}</h3><div class="meta"><span>${fmtDate(a.date)}</span><span class="dot"></span><span>${a.read} min</span></div></div></a>`
+            (a) => `<a class="card-link" href="${L.art(b, a.slug)}"><div class="hero-mini">${storyImage(b, a)}<span class="tag accent">${esc(catName(a.category))}</span><h3>${esc(a.title)}</h3><div class="meta"><span>${fmtDate(a.date)}</span><span class="dot"></span><span>${a.read} min</span></div></div></a>`
           )
           .join("")}
       </div>
@@ -373,6 +381,7 @@ function buildArticles() {
       <p class="dek">${esc(a.dek)}</p>
       <div class="byline meta"><span>By ${esc(a.author)}</span><span class="dot"></span><span>${fmtDate(a.date)}</span><span class="dot"></span><span>${a.read} min read</span></div>
     </div>
+    ${storyImage(b, a, { hero: true, caption: true })}
     <div class="article-body">
       ${renderBody(a.body)}
     </div>
@@ -537,3 +546,4 @@ function run() {
 }
 
 run();
+
