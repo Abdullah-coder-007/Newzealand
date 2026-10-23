@@ -12,6 +12,7 @@ const articles = [
     slug: "get-paid-faster-late-invoices",
     title: "Getting paid faster: five ways to tame late invoices",
     dek: "Late payment is the number-one cashflow headache for Kiwi small businesses. Here's how to shorten the wait.",
+    image: { src: "images/cashflow-finance.svg", alt: "A ledger, coins and a rising cashflow chart", credit: "NZ SME editorial illustration" },
     category: "cashflow-finance", group: "topic", author: "Priya Naidu",
     date: "2026-10-20", read: 5, featured: true,
     body: [
@@ -27,6 +28,7 @@ const articles = [
     slug: "cashflow-forecast-13-weeks",
     title: "The 13-week cashflow forecast every owner should keep",
     dek: "You can't fix what you can't see. A simple rolling forecast turns nasty surprises into manageable decisions.",
+    image: { src: "images/cashflow-finance.svg", alt: "A ledger, coins and a rising cashflow chart", credit: "NZ SME editorial illustration" },
     category: "cashflow-finance", group: "topic", author: "Tom Fletcher",
     date: "2026-10-11", read: 6,
     body: [
@@ -40,6 +42,7 @@ const articles = [
     slug: "funding-options-nz-small-business",
     title: "Beyond the bank: funding options for growing SMEs",
     dek: "When the bank says no, it isn't the end of the road. A look at the lending landscape for Kiwi small businesses.",
+    image: { src: "images/cashflow-finance.svg", alt: "A ledger, coins and a rising cashflow chart", credit: "NZ SME editorial illustration" },
     category: "cashflow-finance", group: "topic", author: "James McKenzie",
     date: "2026-09-29", read: 5,
     body: [
@@ -55,6 +58,7 @@ const articles = [
     slug: "gst-basics-new-businesses",
     title: "GST without the groan: a plain-English guide for new owners",
     dek: "Registering, charging and filing GST sounds scarier than it is. Here's what a new NZ business actually needs to know.",
+    image: { src: "images/tax-compliance.svg", alt: "A calendar and a completed tax checklist", credit: "NZ SME editorial illustration" },
     category: "tax-compliance", group: "topic", author: "Priya Naidu",
     date: "2026-10-18", read: 6, featured: true,
     body: [
@@ -70,6 +74,7 @@ const articles = [
     slug: "compliance-calendar-small-business",
     title: "Build a compliance calendar and never miss a deadline",
     dek: "Tax dates, filing, health and safety reviews — one simple calendar keeps the whole lot off your mind.",
+    image: { src: "images/tax-compliance.svg", alt: "A calendar and a completed tax checklist", credit: "NZ SME editorial illustration" },
     category: "tax-compliance", group: "topic", author: "Mere Tupou",
     date: "2026-10-06", read: 4,
     body: [
@@ -83,6 +88,7 @@ const articles = [
     slug: "employment-law-first-hire",
     title: "Your first hire: the employment rules you can't skip",
     dek: "Taking on your first employee is a milestone — and a legal step. The essentials every NZ employer must get right.",
+    image: { src: "images/tax-compliance.svg", alt: "A calendar and a completed tax checklist", credit: "NZ SME editorial illustration" },
     category: "tax-compliance", group: "topic", author: "James McKenzie",
     date: "2026-09-24", read: 5,
     body: [
@@ -98,6 +104,7 @@ const articles = [
     slug: "hiring-great-people-small-team",
     title: "How small teams win the race for good people",
     dek: "You can't outspend the big players on salary — but you can out-care them. Hiring well when you're small.",
+    image: { src: "images/people-recruitment.svg", alt: "Three abstract team members gathered around a table", credit: "NZ SME editorial illustration" },
     category: "people-recruitment", group: "topic", author: "Aroha Ngata",
     date: "2026-10-16", read: 5, featured: true,
     body: [
@@ -111,6 +118,7 @@ const articles = [
     slug: "keeping-staff-retention-small-business",
     title: "The quiet art of keeping your best people",
     dek: "Replacing someone good is expensive and disruptive. Small, consistent habits keep your team for the long haul.",
+    image: { src: "images/people-recruitment.svg", alt: "Three abstract team members gathered around a table", credit: "NZ SME editorial illustration" },
     category: "people-recruitment", group: "topic", author: "Hine Walker",
     date: "2026-10-02", read: 4,
     body: [
@@ -124,6 +132,7 @@ const articles = [
     slug: "wellbeing-at-work-small-business",
     title: "Looking after your team without a big HR budget",
     dek: "Wellbeing isn't a perks program — it's workload, trust and knowing your people. What small firms can do today.",
+    image: { src: "images/people-recruitment.svg", alt: "Three abstract team members gathered around a table", credit: "NZ SME editorial illustration" },
     category: "people-recruitment", group: "topic", author: "Sam Taylor",
     date: "2026-09-20", read: 4,
     body: [
@@ -137,6 +146,7 @@ const articles = [
     slug: "ai-for-small-business-getting-started",
     title: "AI for small business: where to actually start",
     dek: "Kiwi SMEs know AI matters but many aren't sure where to begin. Three low-risk places to get real value fast.",
+    image: { src: "images/ai-technology.svg", alt: "A laptop connected to a network of useful tools", credit: "NZ SME editorial illustration" },
     category: "ai-technology", group: "topic", author: "Daniel Park",
     date: "2026-10-21", read: 6, featured: true,
     body: [
@@ -151,6 +161,7 @@ const articles = [
     slug: "small-business-tech-stack",
     title: "Building a simple tech stack that just works",
     dek: "You don't need twenty tools. A handful of well-chosen apps can run most of a small New Zealand business.",
+    image: { src: "images/ai-technology.svg", alt: "A laptop connected to a network of useful tools", credit: "NZ SME editorial illustration" },
     category: "ai-technology", group: "topic", author: "Tom Fletcher",
     date: "2026-10-08", read: 5,
     body: [
@@ -163,6 +174,7 @@ const articles = [
     slug: "cyber-security-basics-smes",
     title: "Cyber security basics every small business needs",
     dek: "Scammers don't skip the little guys. The simple protections that stop most attacks before they start.",
+    image: { src: "images/ai-technology.svg", alt: "A laptop connected to a network of useful tools", credit: "NZ SME editorial illustration" },
     category: "ai-technology", group: "topic", author: "Priya Naidu",
     date: "2026-09-26", read: 5,
     body: [
@@ -177,6 +189,7 @@ const articles = [
     slug: "local-marketing-on-a-budget",
     title: "Marketing on a shoestring: what works for small NZ firms",
     dek: "You don't need a big budget to be found and remembered. Practical, low-cost marketing that earns its keep.",
+    image: { src: "images/marketing-sales.svg", alt: "A megaphone and expanding circles representing reach", credit: "NZ SME editorial illustration" },
     category: "marketing-sales", group: "topic", author: "Hine Walker",
     date: "2026-10-19", read: 5, featured: true,
     body: [
@@ -191,6 +204,7 @@ const articles = [
     slug: "pricing-your-work-confidence",
     title: "Pricing your work with confidence (and stopping the discount habit)",
     dek: "Underpricing is quietly common among Kiwi small businesses. How to charge what you're worth without losing customers.",
+    image: { src: "images/marketing-sales.svg", alt: "A megaphone and expanding circles representing reach", credit: "NZ SME editorial illustration" },
     category: "marketing-sales", group: "topic", author: "James McKenzie",
     date: "2026-10-04", read: 5,
     body: [
@@ -204,6 +218,7 @@ const articles = [
     slug: "turning-customers-into-advocates",
     title: "Turning happy customers into your sales team",
     dek: "A referral from a trusted local beats any ad. How to make word of mouth happen on purpose.",
+    image: { src: "images/marketing-sales.svg", alt: "A megaphone and expanding circles representing reach", credit: "NZ SME editorial illustration" },
     category: "marketing-sales", group: "topic", author: "Aroha Ngata",
     date: "2026-09-22", read: 4,
     body: [
@@ -217,6 +232,7 @@ const articles = [
     slug: "scaling-without-breaking",
     title: "Scaling up without breaking what makes you good",
     dek: "Growth is fragile. How to get bigger while keeping the quality and culture that got you here.",
+    image: { src: "images/growth-strategy.svg", alt: "Steps rising toward a flag and a growing plant", credit: "NZ SME editorial illustration" },
     category: "growth-strategy", group: "topic", author: "Daniel Park",
     date: "2026-10-17", read: 6, featured: true,
     body: [
@@ -231,6 +247,7 @@ const articles = [
     slug: "exporting-first-steps-nz",
     title: "Thinking about exporting? Start here",
     dek: "New Zealand is a trading nation of small firms. The first, practical steps to selling beyond our shores.",
+    image: { src: "images/growth-strategy.svg", alt: "Steps rising toward a flag and a growing plant", credit: "NZ SME editorial illustration" },
     category: "growth-strategy", group: "topic", author: "Mere Tupou",
     date: "2026-10-03", read: 6,
     body: [
@@ -243,6 +260,7 @@ const articles = [
     slug: "planning-business-succession",
     title: "Succession: planning the exit before you need to",
     dek: "Most owners never plan their exit — and pay for it later. Why succession deserves thought long before you leave.",
+    image: { src: "images/growth-strategy.svg", alt: "Steps rising toward a flag and a growing plant", credit: "NZ SME editorial illustration" },
     category: "growth-strategy", group: "topic", author: "Tom Fletcher",
     date: "2026-09-18", read: 5,
     body: [
@@ -256,6 +274,7 @@ const articles = [
     slug: "sustainability-small-business-start",
     title: "Sustainability that's good for business, not just the brochure",
     dek: "For small firms, the best green steps also cut costs. Where to begin without greenwashing.",
+    image: { src: "images/sustainability.svg", alt: "A seedling growing inside a circular resource loop", credit: "NZ SME editorial illustration" },
     category: "sustainability", group: "topic", author: "Aroha Ngata",
     date: "2026-10-14", read: 5, featured: true,
     body: [
@@ -269,6 +288,7 @@ const articles = [
     slug: "reducing-waste-practical",
     title: "Practical ways to cut waste in a small business",
     dek: "Less waste means lower costs and a lighter footprint. Simple changes that add up across the year.",
+    image: { src: "images/sustainability.svg", alt: "A seedling growing inside a circular resource loop", credit: "NZ SME editorial illustration" },
     category: "sustainability", group: "topic", author: "Sam Taylor",
     date: "2026-09-30", read: 4,
     body: [
@@ -281,6 +301,7 @@ const articles = [
     slug: "telling-your-sustainability-story",
     title: "Telling your sustainability story the honest way",
     dek: "Customers reward real effort and punish spin. How to communicate your values with credibility.",
+    image: { src: "images/sustainability.svg", alt: "A seedling growing inside a circular resource loop", credit: "NZ SME editorial illustration" },
     category: "sustainability", group: "topic", author: "Hine Walker",
     date: "2026-09-15", read: 4,
     body: [
@@ -294,6 +315,7 @@ const articles = [
     slug: "owner-burnout-nz",
     title: "The owner's dilemma: running the business without it running you",
     dek: "Small-business owners carry everything. How to build a business that doesn't quietly burn you out.",
+    image: { src: "images/leadership-wellbeing.svg", alt: "A warm cup beside a plant and a rising sun", credit: "NZ SME editorial illustration" },
     category: "leadership-wellbeing", group: "topic", author: "Mere Tupou",
     date: "2026-10-13", read: 5, featured: true,
     body: [
@@ -307,6 +329,7 @@ const articles = [
     slug: "decision-making-small-business",
     title: "Making good calls when it all lands on you",
     dek: "Owners make dozens of decisions a day. A simple way to make the big ones better and the small ones faster.",
+    image: { src: "images/leadership-wellbeing.svg", alt: "A warm cup beside a plant and a rising sun", credit: "NZ SME editorial illustration" },
     category: "leadership-wellbeing", group: "topic", author: "Daniel Park",
     date: "2026-09-28", read: 4,
     body: [
@@ -318,6 +341,7 @@ const articles = [
     slug: "learning-from-other-owners",
     title: "Why every owner needs people who get it",
     dek: "Running a business can be lonely. A trusted circle of fellow owners is one of the best investments you'll make.",
+    image: { src: "images/leadership-wellbeing.svg", alt: "A warm cup beside a plant and a rising sun", credit: "NZ SME editorial illustration" },
     category: "leadership-wellbeing", group: "topic", author: "Aroha Ngata",
     date: "2026-09-12", read: 4,
     body: [
@@ -331,6 +355,7 @@ const articles = [
     slug: "agritech-on-the-farm",
     title: "Agritech on the farm: smart tools, real results",
     dek: "New Zealand's farmers are quietly becoming some of the world's most tech-savvy. What's working on the ground.",
+    image: { src: "images/agribusiness.svg", alt: "Rolling farm hills, crop rows and a small barn", credit: "NZ SME editorial illustration" },
     category: "agribusiness", group: "industry", author: "Tom Fletcher",
     date: "2026-10-15", read: 5, featured: true,
     body: [
@@ -343,6 +368,7 @@ const articles = [
     slug: "adding-value-farm-gate",
     title: "From commodity to brand: adding value at the farm gate",
     dek: "The margin is often in the story, not just the product. How small producers are building brands that travel.",
+    image: { src: "images/agribusiness.svg", alt: "Rolling farm hills, crop rows and a small barn", credit: "NZ SME editorial illustration" },
     category: "agribusiness", group: "industry", author: "Priya Naidu",
     date: "2026-10-01", read: 5,
     body: [
@@ -354,6 +380,7 @@ const articles = [
     slug: "rural-compliance-made-simple",
     title: "Keeping on top of rural compliance without the paperwork pile",
     dek: "Environmental and animal-welfare rules keep evolving. Simple systems to stay compliant and sane.",
+    image: { src: "images/agribusiness.svg", alt: "Rolling farm hills, crop rows and a small barn", credit: "NZ SME editorial illustration" },
     category: "agribusiness", group: "industry", author: "James McKenzie",
     date: "2026-09-17", read: 4,
     body: [
@@ -367,6 +394,7 @@ const articles = [
     slug: "trade-business-cashflow",
     title: "The trade owner's guide to staying cashflow-positive",
     dek: "Busy doesn't always mean profitable. Why so many trades struggle with cash — and how to fix it.",
+    image: { src: "images/construction-trades.svg", alt: "A house frame, a ruler and a builder's hard hat", credit: "NZ SME editorial illustration" },
     category: "construction-trades", group: "industry", author: "James McKenzie",
     date: "2026-10-12", read: 5, featured: true,
     body: [
@@ -380,6 +408,7 @@ const articles = [
     slug: "quoting-winning-right-jobs",
     title: "Quoting smarter: winning the right jobs, not every job",
     dek: "A good quote protects your margin and your reputation. How to quote with confidence and fewer nasty surprises.",
+    image: { src: "images/construction-trades.svg", alt: "A house frame, a ruler and a builder's hard hat", credit: "NZ SME editorial illustration" },
     category: "construction-trades", group: "industry", author: "Sam Taylor",
     date: "2026-09-27", read: 5,
     body: [
@@ -391,6 +420,7 @@ const articles = [
     slug: "health-and-safety-site-practical",
     title: "Health and safety on site, without the clipboard overwhelm",
     dek: "Keeping your crew safe is the job within the job. Practical habits that protect people and the business.",
+    image: { src: "images/construction-trades.svg", alt: "A house frame, a ruler and a builder's hard hat", credit: "NZ SME editorial illustration" },
     category: "construction-trades", group: "industry", author: "Mere Tupou",
     date: "2026-09-14", read: 4,
     body: [
@@ -404,6 +434,7 @@ const articles = [
     slug: "hospitality-margins-tight-times",
     title: "Protecting margins in hospitality when every cent counts",
     dek: "Rising costs have squeezed cafés, restaurants and tour operators. Practical ways to hold the line.",
+    image: { src: "images/tourism-hospitality.svg", alt: "Mountains behind a café table and a cup", credit: "NZ SME editorial illustration" },
     category: "tourism-hospitality", group: "industry", author: "Priya Naidu",
     date: "2026-10-10", read: 5, featured: true,
     body: [
@@ -417,6 +448,7 @@ const articles = [
     slug: "shoulder-season-tourism",
     title: "Beating the seasons: steady income for tourism operators",
     dek: "Feast-and-famine is the tourism curse. How small operators smooth the year and the cashflow.",
+    image: { src: "images/tourism-hospitality.svg", alt: "Mountains behind a café table and a cup", credit: "NZ SME editorial illustration" },
     category: "tourism-hospitality", group: "industry", author: "Aroha Ngata",
     date: "2026-09-25", read: 4,
     body: [
@@ -428,6 +460,7 @@ const articles = [
     slug: "reviews-reputation-hospitality",
     title: "Your reviews are your front door: managing reputation online",
     dek: "Travellers and locals read reviews before they ever visit. How to earn good ones and handle the rest.",
+    image: { src: "images/tourism-hospitality.svg", alt: "Mountains behind a café table and a cup", credit: "NZ SME editorial illustration" },
     category: "tourism-hospitality", group: "industry", author: "Hine Walker",
     date: "2026-09-13", read: 4,
     body: [
@@ -441,6 +474,7 @@ const articles = [
     slug: "kiwi-saas-building-for-world",
     title: "Building for the world from a small country",
     dek: "New Zealand punches above its weight in software. What early-stage founders can learn from those who've scaled.",
+    image: { src: "images/tech-saas.svg", alt: "Software windows with a cloud connection", credit: "NZ SME editorial illustration" },
     category: "tech-saas", group: "industry", author: "Daniel Park",
     date: "2026-10-09", read: 6, featured: true,
     body: [
@@ -454,6 +488,7 @@ const articles = [
     slug: "startup-first-customers",
     title: "From idea to first ten customers",
     dek: "The hardest customers to win are the first few. How early-stage Kiwi startups find their footing.",
+    image: { src: "images/tech-saas.svg", alt: "Software windows with a cloud connection", credit: "NZ SME editorial illustration" },
     category: "tech-saas", group: "industry", author: "Tom Fletcher",
     date: "2026-09-23", read: 5,
     body: [
@@ -465,6 +500,7 @@ const articles = [
     slug: "bootstrapping-vs-raising",
     title: "Bootstrapping or raising? Choosing how to fund your startup",
     dek: "Taking investment isn't the only path. A clear-eyed look at the trade-offs for Kiwi founders.",
+    image: { src: "images/tech-saas.svg", alt: "Software windows with a cloud connection", credit: "NZ SME editorial illustration" },
     category: "tech-saas", group: "industry", author: "James McKenzie",
     date: "2026-09-11", read: 5,
     body: [
@@ -478,6 +514,7 @@ const articles = [
     slug: "retail-competing-with-giants",
     title: "How small retailers compete with the global giants",
     dek: "Amazon, Temu and Shein are reshaping the market. Where independent Kiwi retailers still win.",
+    image: { src: "images/retail-ecommerce.svg", alt: "A small shop with an awning and a parcel", credit: "NZ SME editorial illustration" },
     category: "retail-ecommerce", group: "industry", author: "Priya Naidu",
     date: "2026-10-07", read: 5, featured: true,
     body: [
@@ -491,6 +528,7 @@ const articles = [
     slug: "starting-online-store-nz",
     title: "Taking your shop online, the sensible way",
     dek: "An online store can widen your reach overnight — if you avoid the common traps. A starter's guide.",
+    image: { src: "images/retail-ecommerce.svg", alt: "A small shop with an awning and a parcel", credit: "NZ SME editorial illustration" },
     category: "retail-ecommerce", group: "industry", author: "Sam Taylor",
     date: "2026-09-21", read: 5,
     body: [
@@ -502,6 +540,7 @@ const articles = [
     slug: "inventory-without-headaches",
     title: "Inventory that doesn't tie up all your cash",
     dek: "Too much stock drains cash; too little loses sales. Finding the balance in a small retail business.",
+    image: { src: "images/retail-ecommerce.svg", alt: "A small shop with an awning and a parcel", credit: "NZ SME editorial illustration" },
     category: "retail-ecommerce", group: "industry", author: "Mere Tupou",
     date: "2026-09-10", read: 4,
     body: [
@@ -515,6 +554,7 @@ const articles = [
     slug: "buying-a-franchise-nz",
     title: "Buying a franchise: doing your homework before you sign",
     dek: "A franchise can be a proven path into business — or an expensive lesson. What to check first.",
+    image: { src: "images/franchising.svg", alt: "Three connected storefronts representing a business network", credit: "NZ SME editorial illustration" },
     category: "franchising", group: "industry", author: "James McKenzie",
     date: "2026-10-05", read: 5, featured: true,
     body: [
@@ -528,6 +568,7 @@ const articles = [
     slug: "running-a-franchise-well",
     title: "Making the most of the model once you're in",
     dek: "The system gives you a head start — but your success still comes down to how you run it. Thriving as a franchisee.",
+    image: { src: "images/franchising.svg", alt: "Three connected storefronts representing a business network", credit: "NZ SME editorial illustration" },
     category: "franchising", group: "industry", author: "Aroha Ngata",
     date: "2026-09-19", read: 4,
     body: [
@@ -539,6 +580,7 @@ const articles = [
     slug: "franchisor-growing-a-network",
     title: "Thinking of franchising your own business?",
     dek: "Turning a successful business into a franchise can fuel growth — but it's a different business entirely.",
+    image: { src: "images/franchising.svg", alt: "Three connected storefronts representing a business network", credit: "NZ SME editorial illustration" },
     category: "franchising", group: "industry", author: "Daniel Park",
     date: "2026-09-08", read: 5,
     body: [
@@ -552,6 +594,7 @@ const articles = [
     slug: "maori-pasifika-enterprise-rising",
     title: "The rise and rise of Māori and Pasifika enterprise",
     dek: "Māori and Pasifika businesses are a growing force in the economy — built on values as much as on balance sheets.",
+    image: { src: "images/maori-pasifika.svg", alt: "Interconnected circles and a seedling representing community enterprise", credit: "NZ SME editorial illustration" },
     category: "maori-pasifika", group: "industry", author: "Aroha Ngata",
     date: "2026-10-22", read: 6, featured: true,
     body: [
@@ -565,6 +608,7 @@ const articles = [
     slug: "support-maori-pasifika-founders",
     title: "Where Māori and Pasifika founders can find support",
     dek: "From funding to mentoring to networks, a growing ecosystem backs Māori and Pasifika business owners.",
+    image: { src: "images/maori-pasifika.svg", alt: "Interconnected circles and a seedling representing community enterprise", credit: "NZ SME editorial illustration" },
     category: "maori-pasifika", group: "industry", author: "Mere Tupou",
     date: "2026-10-02", read: 4,
     body: [
@@ -576,6 +620,7 @@ const articles = [
     slug: "building-business-on-culture",
     title: "Building a business that honours who you are",
     dek: "For many Māori and Pasifika owners, culture isn't separate from the business — it's the heart of it.",
+    image: { src: "images/maori-pasifika.svg", alt: "Interconnected circles and a seedling representing community enterprise", credit: "NZ SME editorial illustration" },
     category: "maori-pasifika", group: "industry", author: "Hine Walker",
     date: "2026-09-16", read: 5,
     body: [
@@ -589,6 +634,7 @@ const articles = [
     slug: "interview-cafe-owner-wellington",
     title: "\"We nearly closed twice — here's what saved us\"",
     dek: "A Wellington café owner on surviving the hard years, the power of regulars, and why she'd still do it again.",
+    image: { src: "images/interviews.svg", alt: "Two speech bubbles above a notebook", credit: "NZ SME editorial illustration" },
     category: "interviews", group: "interview", author: "NZ SME",
     date: "2026-10-23", read: 6, featured: true,
     body: [
@@ -605,6 +651,7 @@ const articles = [
     slug: "interview-tradie-to-boss",
     title: "\"From tools to the office: the year everything changed\"",
     dek: "An Auckland builder on the leap from working solo to leading a crew — and the mistakes he'd undo.",
+    image: { src: "images/interviews.svg", alt: "Two speech bubbles above a notebook", credit: "NZ SME editorial illustration" },
     category: "interviews", group: "interview", author: "NZ SME",
     date: "2026-10-18", read: 5,
     body: [
@@ -621,6 +668,7 @@ const articles = [
     slug: "interview-maker-to-exporter",
     title: "\"Taking a Kiwi product to the world\"",
     dek: "A small South Island producer on going from a local favourite to shipping overseas — and keeping the soul of it.",
+    image: { src: "images/interviews.svg", alt: "Two speech bubbles above a notebook", credit: "NZ SME editorial illustration" },
     category: "interviews", group: "interview", author: "NZ SME",
     date: "2026-10-12", read: 6,
     body: [
@@ -636,3 +684,4 @@ const articles = [
 ];
 
 module.exports = { articles };
+
